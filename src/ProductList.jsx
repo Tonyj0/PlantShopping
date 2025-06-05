@@ -8,6 +8,23 @@ import { addItem } from './CartSlice'; // adjust path if needed
 function ProductList({ onHomeClick }) {
   const [showCart, setShowCart] = useState(false);
   const [showPlants, setShowPlants] = useState(false);
+  <button
+  onClick={() =>
+    dispatch(addItem({ name: plant.name, cost: plant.cost, image: plant.image }))
+  }
+  style={{
+    backgroundColor: '#4CAF50',
+    color: 'white',
+    border: 'none',
+    padding: '8px 12px',
+    marginTop: '10px',
+    cursor: 'pointer',
+    borderRadius: '4px'
+  }}
+>
+  Add to Cart
+</button>
+
 
   const plantsArray = [
     {
